@@ -1,148 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <title>[lxms@web] newtab</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./script.js"></script>
+  </head>
 
-<head>
-  <title>[lxms@web] newtab</title>
+  <body>
+    <p><span>[lxms@web] </span>newtab</p>
 
-  <style>
-    html {
-      align-items: center;
-      background-color: #1d1f21;
-      color: #c5c8c6;
-      font: 22px/1 "Inconsolata", monospace;
-      height: 100%;
-      justify-content: center;
-      margin: 0;
-      width: 100vw;
-      cursor: text;
-    }
+    <nav id="menu"></nav>
 
-    body {
-      background-color: #1d1f21;
-      border-radius: 2px;
-      color: #c5c8c6;
-      display: flex;
-      flex-direction: column;
-      min-height: 30ch;
-      width: calc(100% - 20px);
-      padding: 10px;
-      max-width: 1000px;
-      margin: 0;
-    }
-
-    p {
-      margin: 0;
-    }
-
-    p span {
-      color: #b5bd68;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    a:focus,
-    a:hover {
-      /* font-weight: bold; */
-      text-decoration: underline;
-    }
-
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav {
-      column-gap: 2em;
-      display: grid;
-      grid-template-columns: auto auto auto auto;
-      padding: 1em 0 0 0;
-    }
-
-    ul:nth-child(5n + 1) li:first-child {
-      color: #a54242;
-    }
-
-    ul:nth-child(5n + 2) li:first-child {
-      color: #de935f;
-    }
-
-    ul:nth-child(5n + 3) li:first-child {
-      color: #f0c674;
-    }
-
-    ul:nth-child(5n + 4) li:first-child {
-      color: #8c9440;
-    }
-
-    ul:nth-child(5n + 5) li:first-child {
-      color: #85678f;
-    }
-
-    li:first-child {
-      font-weight: bold;
-    }
-
-    li:last-child {
-      margin: 0 0 1em 0;
-    }
-
-    p #cursor {
-      background-color: #b5bd68;
-      animation: blink 2s infinite;
-    }
-
-    @keyframes blink {
-      0%,
-      49% {
-        opacity: 0;
-      }
-
-      50% {
-        opacity: 1;
-      }
-    }
-  </style>
-</head>
-
-<body>
-  <p><span>[lxms@web] </span>newtab</p>
-
-  <nav>
-    <ul>
-      <li>media</li>
-      <li><a href="https://www.youtube.com">youtube</a></li>
-      <li><a href="https://www.netflix.com/">netflix</a></li>
-      <li><a href="https://www.reddit.com/">reddit</a></li>
-    </ul>
-
-    <ul>
-      <li>development</li>
-      <li><a href="https://www.github.com/">github</a></li>
-    </ul>
-
-    <ul>
-      <li>education</li>
-      <li><a href="https://wip.windesheim.nl/">wip</a></li>
-      <li><a href="https://elo.windesheim.nl/">elo</a></li>
-      <li><a href="https://windesheim.mycampusprint.nl/">print</a></li>
-    </ul>
-    <ul>
-      <li>security</li>
-      <li><a href="https://vault.bitwarden.com/">bitwarden</a></li>
-      <li><a href="https://central.bitdefender.com/dashboard">bitdefender</a></li>
-    </ul>
-    <ul>
-      <li>calendar</li>
-      <li><a href="https://calendar.google.com/">google</a></li>
-      <li><a href="https://www.familywall.com/events.php">familywall</a></li>
-    </ul>
-  </nav>
-
-  <p><span>[lxms@web]</span> <span id="cursor">_</span></p>
-</body>
-
+    <p>
+      <span>[lxms@web]</span>
+      <label for="search">search</label>
+      <input id="search" type="text" />
+    </p>
+  </body>
 </html>
