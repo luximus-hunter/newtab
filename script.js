@@ -57,6 +57,10 @@ const menuItems = [
         url: 'https://central.bitdefender.com/dashboard/',
         title: 'bitdefender',
       },
+      {
+        url: 'http://192.168.2.69:8123/',
+        title: 'homeassistant',
+      },
     ],
   },
   {
