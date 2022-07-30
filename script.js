@@ -11,10 +11,6 @@ const menuItems = [
         url: 'https://www.netflix.com/',
         title: 'netflix',
       },
-      {
-        url: 'https://www.reddit.com/',
-        title: 'reddit',
-      },
     ],
   },
   {
