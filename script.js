@@ -11,6 +11,32 @@ const menuItems = [
         url: 'https://www.netflix.com/',
         title: 'netflix',
       },
+      {
+        url: 'https://www.spotify.com/',
+        title: 'spotify',
+      },
+    ],
+  },
+  {
+    title: 'beatsaber',
+    color: '#e03c80',
+    links: [
+      {
+        url: 'https://www.scoresaber.com/u/76561198393226059/',
+        title: 'scoresaber',
+      },
+      {
+        url: 'https://www.beatleader.xyz/u/76561198393226059/',
+        title: 'beatleader',
+      },
+      {
+        url: 'https://beatsaver.com/',
+        title: 'beatsaver',
+      },
+      {
+        url: 'https://bsaber.com/',
+        title: 'beastsaber',
+      },
     ],
   },
   {
@@ -122,3 +148,7 @@ search.addEventListener('keypress', (e) => {
 
   window.location.replace(`https://start.duckduckgo.com/?q=${search.value}`);
 });
+
+setInterval(() => {
+  search.focus();
+}, 500);
