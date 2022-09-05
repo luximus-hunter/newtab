@@ -8,8 +8,8 @@ const menuItems = [
         title: 'youtube',
       },
       {
-        url: 'https://www.netflix.com/',
-        title: 'netflix',
+        url: 'https://play.hbomax.com/profile/select',
+        title: 'hbo_max',
       },
       {
         url: 'https://www.spotify.com/',
