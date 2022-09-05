@@ -58,7 +58,7 @@ const menuItems = [
         title: 'wip',
       },
       {
-        url: 'https://elo.windesheim.nl/',
+        url: 'https://leren.windesheim.nl/',
         title: 'elo',
       },
       {
