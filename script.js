@@ -54,6 +54,10 @@ const menuItems = [
     color: '#f0c674',
     links: [
       {
+        url: 'https://www.notion.so/',
+        title: 'notion',
+      },
+      {
         url: 'https://wip.windesheim.nl/',
         title: 'wip',
       },
