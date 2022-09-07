@@ -47,16 +47,16 @@ const menuItems = [
         url: 'https://www.github.com/',
         title: 'github',
       },
+      {
+        url: 'https://github.com/luximus-hunter?tab=stars',
+        title: 'stars',
+      },
     ],
   },
   {
     title: 'education',
     color: '#f0c674',
     links: [
-      {
-        url: 'https://www.notion.so/',
-        title: 'notion',
-      },
       {
         url: 'https://wip.windesheim.nl/',
         title: 'wip',
@@ -110,6 +110,10 @@ const menuItems = [
       {
         url: 'https://www.huysmangroep.nl/barbord/',
         title: 'barbord',
+      },
+      {
+        url: 'https://huysmangroeppr.stackstorage.com/s/1d1XWfJAxyy0w7R/',
+        title: 'stack',
       },
     ],
   },
