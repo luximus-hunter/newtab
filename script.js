@@ -69,6 +69,10 @@ const menuItems = [
         url: 'https://windesheim.mycampusprint.nl/',
         title: 'print',
       },
+      {
+        url: 'https://app.tasker.education/dashboard?spid=6123a2d8e154e1001880b4bf',
+        title: 'tasker',
+      },
     ],
   },
   {
