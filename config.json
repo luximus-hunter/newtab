@@ -80,24 +80,6 @@
     ]
   },
   {
-    "title": "security",
-    "color": "#8c9440",
-    "links": [
-      {
-        "url": "https://vault.bitwarden.com/",
-        "title": "bitwarden"
-      },
-      {
-        "url": "https://central.bitdefender.com/dashboard/",
-        "title": "bitdefender"
-      },
-      {
-        "url": "http://192.168.2.69:8123/",
-        "title": "homeassistant"
-      }
-    ]
-  },
-  {
     "title": "calendar",
     "color": "#85678f",
     "links": [
@@ -132,6 +114,10 @@
       {
         "url": "https://192.168.2.69:9090",
         "title": "cockpit"
+      },
+      {
+        "url": "http://192.168.2.69:81/",
+        "title": "proxy_manager"
       },
       {
         "url": "https://192.168.2.69:500",
