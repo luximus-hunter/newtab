@@ -124,5 +124,27 @@
         "title": "stack"
       }
     ]
+  },
+  {
+    "title": "phantom",
+    "color": "#ad37fc",
+    "links": [
+      {
+        "url": "https://192.168.2.69:9090",
+        "title": "cockpit"
+      },
+      {
+        "url": "https://192.168.2.69:500",
+        "title": "nextcould"
+      },
+      {
+        "url": "https://192.168.2.69:8123",
+        "title": "homeassistant"
+      },
+      {
+        "url": "https://bitwarden.phantomserver.nl",
+        "title": "bitwarden"
+      }
+    ]
   }
 ]
