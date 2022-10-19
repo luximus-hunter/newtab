@@ -14,7 +14,8 @@
       {
         "url": "https://www.spotify.com/",
         "title": "spotify"
-      }
+      },
+      {"url":"","title":"amazon_prime"}
     ]
   },
   {
@@ -108,28 +109,26 @@
     ]
   },
   {
-    "title": "phantom",
+    "title": "security",
     "color": "#ad37fc",
     "links": [
       {
-        "url": "https://192.168.2.69:9090",
-        "title": "cockpit"
-      },
-      {
-        "url": "http://192.168.2.69:81/",
-        "title": "proxy_manager"
-      },
-      {
-        "url": "https://192.168.2.69:500",
-        "title": "nextcould"
-      },
-      {
-        "url": "http://192.168.2.69:8123",
-        "title": "homeassistant"
-      },
-      {
-        "url": "https://bitwarden.phantomserver.nl",
+        "url": "https://vault.bitwarden.com",
         "title": "bitwarden"
+      }
+    ]
+  },
+  {
+    "title": "minecraft",
+    "color": "#43c126",
+    "links": [
+      {
+        "url": "https://github.com/PrismLauncher/PrismLauncher/actions?query=branch%3Adevelop+is%3Asuccess",
+        "title": "prismlauncher"
+      },
+      {
+        "url": "https://modrinth.com/mods",
+        "title": "modrinth"
       }
     ]
   }
