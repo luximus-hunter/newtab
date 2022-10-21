@@ -1,6 +1,6 @@
 html {
   align-items: center;
-  background-color: #1d1f21;
+  background-color: #1c1b22;
   color: #c5c8c6;
   font: 22px/1 'Inconsolata', monospace;
   height: 100%;
@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background-color: #1d1f21;
+  background-color: #1c1b22;
   border-radius: 2px;
   color: #c5c8c6;
   display: flex;
@@ -72,7 +72,7 @@ input[type='text'] {
   background-color: transparent;
   width: max-content;
   border: none;
-  background-color: #1d1f21;
+  background-color: transparent;
   color: #c5c8c6;
   font: 22px/1 'Inconsolata', monospace;
   flex: 1;
