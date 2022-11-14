@@ -8,14 +8,17 @@
         "title": "youtube"
       },
       {
-        "url": "https://play.hbomax.com/profile/select",
+        "url": "https://play.hbomax.com/profile/",
         "title": "hbo_max"
       },
       {
         "url": "https://www.spotify.com/",
         "title": "spotify"
       },
-      {"url":"","title":"amazon_prime"}
+      {
+        "url": "https://www.primevideo.com",
+        "title": "amazon_prime"
+      }
     ]
   },
   {
