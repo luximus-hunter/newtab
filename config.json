@@ -130,5 +130,27 @@
         "title": "modrinth"
       }
     ]
+  },
+  {
+    "title": "android",
+    "color": "#317873",
+    "links": [
+      {
+        "url": "https://github.com/LawnchairLauncher/lawnchair/actions?query=is%3Asuccess",
+        "title": "lawnchair"
+      },
+      {
+        "url": "https://github.com/LawnchairLauncher/lawnicons/actions?query=is%3Asuccess",
+        "title": "lawnicons"
+      },
+      {
+        "url": "https://github.com/revanced/revanced-manager/releases/latest",
+        "title": "revanced"
+      },
+      {
+        "url": "https://www.apkmirror.com/apk/google-inc/youtube/youtube-17-43-36-release/youtube-17-43-36-2-android-apk-download/",
+        "title": "youtube_apk"
+      }
+    ]
   }
 ]
