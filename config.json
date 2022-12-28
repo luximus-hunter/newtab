@@ -136,6 +136,28 @@
     ]
   },
   {
+    "title": "steam",
+    "color": "#004B8D",
+    "links": [
+      {
+        "url": "https://steamcommunity.com/profiles/76561198393226059/",
+        "title": "steam"
+      },
+      {
+        "url": "https://store.steampowered.com/",
+        "title": "store"
+      },
+      {
+        "url": "https://steamdb.info/calculator/76561198393226059/",
+        "title": "steamdb"
+      },
+      {
+        "url": "https://www.steamgriddb.com/",
+        "title": "steamgriddb"
+      }
+    ]
+  },
+  {
     "title": "android",
     "color": "#317873",
     "links": [

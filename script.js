@@ -26,22 +26,4 @@ fetch('./config.json')
 
       menu.appendChild(ul);
     });
-
-    // Search
-    const search = document.getElementById('search');
-    search.focus();
-
-    search.addEventListener('keypress', (e) => {
-      if (e.key !== 'Enter' || search.value.trim() === '') {
-        return;
-      }
-
-      window.location.replace(
-        `https://start.duckduckgo.com/?q=${search.value}`
-      );
-    });
   });
-
-setInterval(() => {
-  search.focus();
-}, 500);
