@@ -8,6 +8,10 @@
         "title": "youtube"
       },
       {
+        "url": "https://www.reddit.com",
+        "title": "reddit"
+      },
+      {
         "url": "https://play.hbomax.com/profile/",
         "title": "hbo_max"
       },
@@ -174,7 +178,7 @@
         "title": "revanced"
       },
       {
-        "url": "https://www.apkmirror.com/apk/google-inc/youtube/youtube-17-43-36-release/youtube-17-43-36-2-android-apk-download/",
+        "url": "https://www.apkmirror.com/apk/google-inc/youtube/youtube-17-49-37-release/youtube-17-49-37-2-android-apk-download/",
         "title": "youtube_apk"
       }
     ]
