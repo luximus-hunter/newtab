@@ -1,7 +1,7 @@
 [
   {
     "title": "media",
-    "color": "#a54242",
+    "color": "#ffb5b5",
     "links": [
       {
         "url": "https://www.youtube.com/",
@@ -12,12 +12,16 @@
         "title": "reddit"
       },
       {
-        "url": "https://play.hbomax.com/profile/",
-        "title": "hbo_max"
-      },
-      {
         "url": "https://www.spotify.com/",
         "title": "spotify"
+      },
+      {
+        "url": "https://netflix.com/",
+        "title": "netflix"
+      },
+      {
+        "url": "https://play.hbomax.com/profile/",
+        "title": "hbo_max"
       },
       {
         "url": "https://www.primevideo.com",
@@ -26,30 +30,8 @@
     ]
   },
   {
-    "title": "beatsaber",
-    "color": "#e03c80",
-    "links": [
-      {
-        "url": "https://www.scoresaber.com/u/76561198393226059/",
-        "title": "scoresaber"
-      },
-      {
-        "url": "https://www.beatleader.xyz/u/76561198393226059/",
-        "title": "beatleader"
-      },
-      {
-        "url": "https://beatsaver.com/",
-        "title": "beatsaver"
-      },
-      {
-        "url": "https://bsaber.com/",
-        "title": "beastsaber"
-      }
-    ]
-  },
-  {
     "title": "development",
-    "color": "#de935f",
+    "color": "#ff6b97",
     "links": [
       {
         "url": "https://www.github.com/",
@@ -63,7 +45,7 @@
   },
   {
     "title": "education",
-    "color": "#f0c674",
+    "color": "#bd4882",
     "links": [
       {
         "url": "https://wip.windesheim.nl/",
@@ -88,22 +70,8 @@
     ]
   },
   {
-    "title": "calendar",
-    "color": "#85678f",
-    "links": [
-      {
-        "url": "https://calendar.google.com/",
-        "title": "google"
-      },
-      {
-        "url": "https://www.familywall.com/events.php",
-        "title": "familywall"
-      }
-    ]
-  },
-  {
     "title": "scouts",
-    "color": "#487e94",
+    "color": "#80366b",
     "links": [
       {
         "url": "https://www.huysmangroep.nl/barbord/",
@@ -117,7 +85,7 @@
   },
   {
     "title": "security",
-    "color": "#ad37fc",
+    "color": "#5a265e",
     "links": [
       {
         "url": "https://vault.bitwarden.com",
@@ -126,22 +94,8 @@
     ]
   },
   {
-    "title": "minecraft",
-    "color": "#43c126",
-    "links": [
-      {
-        "url": "https://github.com/PrismLauncher/PrismLauncher/actions?query=branch%3Adevelop+is%3Asuccess",
-        "title": "prismlauncher"
-      },
-      {
-        "url": "https://modrinth.com/mods",
-        "title": "modrinth"
-      }
-    ]
-  },
-  {
     "title": "steam",
-    "color": "#004B8D",
+    "color": "#422445",
     "links": [
       {
         "url": "https://steamcommunity.com/profiles/76561198393226059/",
@@ -162,8 +116,44 @@
     ]
   },
   {
+    "title": "minecraft",
+    "color": "#73275c",
+    "links": [
+      {
+        "url": "https://github.com/PrismLauncher/PrismLauncher/actions?query=branch%3Adevelop+is%3Asuccess",
+        "title": "prismlauncher"
+      },
+      {
+        "url": "https://modrinth.com/mods",
+        "title": "modrinth"
+      }
+    ]
+  },
+  {
+    "title": "beatsaber",
+    "color": "#b0305c",
+    "links": [
+      {
+        "url": "https://www.scoresaber.com/u/76561198393226059/",
+        "title": "scoresaber"
+      },
+      {
+        "url": "https://www.beatleader.xyz/u/76561198393226059/",
+        "title": "beatleader"
+      },
+      {
+        "url": "https://beatsaver.com/",
+        "title": "beatsaver"
+      },
+      {
+        "url": "https://bsaber.com/",
+        "title": "beastsaber"
+      }
+    ]
+  },
+  {
     "title": "android",
-    "color": "#317873",
+    "color": "#eb564b",
     "links": [
       {
         "url": "https://github.com/LawnchairLauncher/lawnchair/actions?query=is%3Asuccess",
@@ -178,8 +168,22 @@
         "title": "revanced"
       },
       {
-        "url": "https://www.apkmirror.com/apk/google-inc/youtube/youtube-17-49-37-release/youtube-17-49-37-2-android-apk-download/",
+        "url": "https://www.apkmirror.com/apk/google-inc/youtube/youtube-18.03.36-release/youtube-18.03.36-2-android-apk-download/",
         "title": "youtube_apk"
+      }
+    ]
+  },
+  {
+    "title": "home",
+    "color": "#ff9166",
+    "links": [
+      {
+        "url": "http://10.10.1.254",
+        "title": "router"
+      },
+      {
+        "url": "https://10.10.1.250",
+        "title": "accesspoint"
       }
     ]
   }
