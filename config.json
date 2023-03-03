@@ -152,8 +152,23 @@
     ]
   },
   {
-    "title": "android",
+    "title": "destiny_2",
     "color": "#eb564b",
+    "links": [
+      {
+        "url": "https://app.destinyitemmanager.com/",
+        "title": "dim"
+      },
+      {
+        "url": "https://whereisxur.com/",
+        "title": "where_is_xur"
+      }
+    ]
+  },
+
+  {
+    "title": "android",
+    "color": "#ff9166",
     "links": [
       {
         "url": "https://github.com/LawnchairLauncher/lawnchair/actions?query=is%3Asuccess",
@@ -175,7 +190,7 @@
   },
   {
     "title": "home",
-    "color": "#ff9166",
+    "color": "#ffb84c",
     "links": [
       {
         "url": "http://10.10.1.254",
