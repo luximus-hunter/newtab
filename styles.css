@@ -2,7 +2,7 @@
 
 html {
     align-items: center;
-    background-color: #1c1b22;
+    background-color: #1a1a1a;
     color: #c5c8c6;
     font-size: 20px;
     font-family: 'Roboto Mono', monospace;
@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    background-color: #1c1b22;
+    background-color: #1a1a1a;
     border-radius: 2px;
     color: #c5c8c6;
     display: flex;
