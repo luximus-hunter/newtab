@@ -9,7 +9,6 @@ fetch('./config.json')
       const t = document.createElement('li');
 
       t.innerHTML = menuItem.title;
-      t.style.color = menuItem.color;
 
       ul.appendChild(t);
 

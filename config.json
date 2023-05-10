@@ -1,11 +1,10 @@
 [
   {
-    "title": "media",
-    "color": "#ffb5b5",
+    "title": "Media",
     "links": [
       {
         "url": "https://www.youtube.com/",
-        "title": "youtube"
+        "title": "YouTube"
       },
       {
         "url": "https://9anime.me",
@@ -13,225 +12,209 @@
       },
       {
         "url": "https://www.reddit.com",
-        "title": "reddit"
+        "title": "Reddit"
       },
       {
         "url": "https://netflix.com/",
-        "title": "netflix"
+        "title": "Netflix"
       },
       {
         "url": "https://play.hbomax.com/profile/",
-        "title": "hbo_max"
+        "title": "HBO MAX"
+      },
+      {
+        "url": "https://www.disneyplus.com/",
+        "title": "Disney+"
       }
     ]
   },
   {
-    "title": "development",
-    "color": "#ff6b97",
+    "title": "Development",
     "links": [
       {
         "url": "https://www.github.com/",
-        "title": "github"
+        "title": "GitHub"
       },
       {
         "url": "https://github.com/luximus-hunter?tab=stars",
-        "title": "stars"
-      },
-      {
-        "url": "https://bing.com/chat",
-        "title": "bing_chat"
+        "title": "Stars"
       }
     ]
   },
   {
-    "title": "education",
-    "color": "#bd4882",
+    "title": "Windesheim",
     "links": [
       {
         "url": "https://wip.windesheim.nl/",
-        "title": "wip"
+        "title": "WIP"
       },
       {
         "url": "https://leren.windesheim.nl/",
-        "title": "elo"
+        "title": "ELO"
       },
       {
         "url": "https://windesheim.mycampusprint.nl/",
-        "title": "print"
+        "title": "Print"
       },
       {
         "url": "https://app.tasker.education/",
-        "title": "tasker"
+        "title": "Tasker"
       },
       {
         "url": "https://skylab.windesheim.nl",
-        "title": "skylab"
+        "title": "SkyLab"
       }
     ]
   },
   {
-    "title": "scouts",
-    "color": "#80366b",
+    "title": "Scouts",
     "links": [
       {
         "url": "https://www.huysmangroep.nl/barbord/",
-        "title": "barbord"
+        "title": "Barbord"
       },
       {
         "url": "https://huysmangroeppr.stackstorage.com/s/1d1XWfJAxyy0w7R/",
-        "title": "stack"
+        "title": "Stack"
       }
     ]
   },
   {
-    "title": "security",
-    "color": "#5a265e",
-    "links": [
-      {
-        "url": "https://vault.bitwarden.com",
-        "title": "bitwarden"
-      }
-    ]
-  },
-  {
-    "title": "steam",
-    "color": "#422445",
+    "title": "Steam",
     "links": [
       {
         "url": "https://steamcommunity.com/profiles/76561198393226059/",
-        "title": "steam"
+        "title": "Profile"
       },
       {
         "url": "https://store.steampowered.com/",
-        "title": "store"
+        "title": "Store"
       },
       {
         "url": "https://steamdb.info/calculator/76561198393226059/",
-        "title": "steamdb"
+        "title": "SteamDB"
       },
       {
         "url": "https://www.steamgriddb.com/",
-        "title": "steamgriddb"
+        "title": "SteamGridDB"
       }
     ]
   },
   {
-    "title": "minecraft",
-    "color": "#73275c",
+    "title": "Minecraft",
     "links": [
       {
         "url": "https://github.com/PrismLauncher/PrismLauncher/actions?query=branch%3Adevelop+is%3Asuccess",
-        "title": "prismlauncher"
+        "title": "Prism"
       },
       {
         "url": "https://modrinth.com/mods",
-        "title": "modrinth"
+        "title": "Modrinth"
+      },
+      {
+        "url": "https://www.curseforge.com/minecraft",
+        "title": "CurseForge"
       }
     ]
   },
   {
-    "title": "beatsaber",
-    "color": "#b0305c",
+    "title": "BeatSaber",
     "links": [
       {
         "url": "https://www.scoresaber.com/u/76561198393226059/",
-        "title": "scoresaber"
+        "title": "ScoreSaber"
       },
       {
         "url": "https://www.beatleader.xyz/u/76561198393226059/",
-        "title": "beatleader"
+        "title": "BeatLeader"
       },
       {
         "url": "https://beatsaver.com/",
-        "title": "beatsaver"
+        "title": "BeatSaver"
       },
       {
         "url": "https://bsaber.com/",
-        "title": "beastsaber"
+        "title": "BeastSaber"
       }
     ]
   },
   {
-    "title": "destiny_2",
-    "color": "#eb564b",
+    "title": "Destiny 2",
     "links": [
       {
         "url": "https://app.destinyitemmanager.com/",
-        "title": "dim"
+        "title": "DIM"
       },
       {
         "url": "https://whereisxur.com/",
-        "title": "where_is_xur"
+        "title": "Where is Xur"
       }
     ]
   },
   {
-    "title": "android",
-    "color": "#ff9166",
+    "title": "Android",
     "links": [
       {
         "url": "https://github.com/LawnchairLauncher/lawnchair/actions?query=is%3Asuccess",
-        "title": "lawnchair"
+        "title": "Lawnchair"
       },
       {
         "url": "https://github.com/LawnchairLauncher/lawnicons/actions?query=is%3Asuccess",
-        "title": "lawnicons"
+        "title": "Lawnicons"
       },
       {
         "url": "https://github.com/revanced/revanced-manager/releases/latest",
-        "title": "revanced"
+        "title": "ReVanced"
       },
       {
         "url": "https://www.apkmirror.com/apk/google-inc/youtube/youtube-18.15.40-release/youtube-18.15.40-2-android-apk-download/",
-        "title": "youtube_apk"
+        "title": "YouTube APK"
       }
     ]
   },
   {
-    "title": "home",
-    "color": "#ffb84c",
+    "title": "Home",
     "links": [
       {
         "url": "http://10.10.1.254",
-        "title": "router"
+        "title": "Router"
       },
       {
         "url": "https://10.10.1.250",
-        "title": "accesspoint"
+        "title": "Access Point"
       }
     ]
   },
   {
-    "title": "sieval",
-    "color": "#ffb84c",
+    "title": "Sieval",
     "links": [
       {
         "url": "https://sieval.atlassian.net/jira/software/projects/SIEV/boards/140",
-        "title": "jira"
+        "title": "Jira"
       },
       {
         "url": "https://bitbucket.org/sieval/sievalintern/src/master/",
-        "title": "gitbucket"
+        "title": "GitBucket"
       },
       {
         "url": "https://liveadminwindesheim-my.sharepoint.com/:f:/g/personal/s1170953_student_windesheim_nl/Es7j6YAISmFKtHEwmx87nUwBZRzyrZESmiQ6uEgCKrnpBg?e=RZ1tMf",
-        "title": "drive"
+        "title": "Drive"
       },
       {
         "url": "https://angular.io/docs",
-        "title": "angular"
+        "title": "Angular"
       },
       {
         "url": "https://material.angular.io/components/categories",
-        "title": "angular_material"
+        "title": "Angular Material"
       },
       {
         "url": "https://www.figma.com/file/0YusSJreihJBPjkS2G2M13/Sieval-Intern?node-id=507%3A2125&t=bzWePxwY5RiLSPmU-1",
-        "title": "figma"
+        "title": "Figma"
       },
       {
         "url": "https://cloud.myuuiii.com/s/ywCenXZJE8jit3K",
-        "title": "exports"
+        "title": "Exports"
       }
     ]
   }
