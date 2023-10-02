@@ -1,13 +1,13 @@
-const searchInput = document.getElementById('search')
-const resultsContainer = document.getElementById('results')
-const groupContainer = document.getElementById('groups')
-
-resultsContainer.classList.add('links-container')
+const urlIcon = (url) => `https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${url}&size=64`
+const googleProxyURL = 'https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&refresh=2592000&url=';
+const searchUrl = 'https://www.bing.com/?q='
 
 const colorThief = new ColorThief();
 
-const urlIcon = (url) => `https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${url}&size=64`
-let googleProxyURL = 'https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&refresh=2592000&url=';
+const searchInput = document.getElementById('search')
+const groupContainer = document.getElementById('groups')
+const resultsContainer = document.getElementById('results')
+resultsContainer.classList.add('links-container')
 
 let groups = []
 let colors = []
@@ -48,7 +48,7 @@ const searchOnKeyPress = (event) => {
     if (keyCode == 'Enter'){
         event.preventDefault()
         if (getLinkCount() < 1) {
-            location.href = 'https://www.google.com/search?q=' + searchInput.value
+            location.href = searchUrl + searchInput.value
         } else {  
             searchInput.value = ''
             goToFirstLink()
