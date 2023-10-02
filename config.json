@@ -7,10 +7,6 @@
         "title": "YouTube"
       },
       {
-        "url": "https://9anime.me",
-        "title": "9anime"
-      },
-      {
         "url": "https://www.reddit.com",
         "title": "Reddit"
       },
@@ -46,15 +42,18 @@
     "links": [
       {
         "url": "https://wip.windesheim.nl/",
-        "title": "WIP"
+        "title": "WIP",
+        "icon": "https://windesheim.nl"
       },
       {
         "url": "https://leren.windesheim.nl/",
-        "title": "ELO"
+        "title": "ELO",
+        "icon": "https://windesheim.nl"
       },
       {
         "url": "https://windesheim.mycampusprint.nl/",
-        "title": "Print"
+        "title": "Print",
+        "icon": "https://windesheim.nl"
       },
       {
         "url": "https://app.tasker.education/",
@@ -70,8 +69,14 @@
     "title": "Scouts",
     "links": [
       {
-        "url": "https://www.huysmangroep.nl/barbord/",
-        "title": "Barbord"
+        "url": "https://barbord.vercel.app/",
+        "title": "Barbord HIII",
+        "icon": "https://huysmangroep.nl/"
+      },
+      {
+        "url": "https://barbord-sherros.vercel.app/",
+        "title": "Barbord Sher",
+        "icon": "https://huysmangroep.nl/"
       },
       {
         "url": "https://huysmangroeppr.stackstorage.com/s/1d1XWfJAxyy0w7R/",
@@ -104,8 +109,12 @@
     "title": "Minecraft",
     "links": [
       {
-        "url": "https://github.com/PrismLauncher/PrismLauncher/actions?query=branch%3Adevelop+is%3Asuccess",
+        "url": "https://prismlauncher.org/",
         "title": "Prism"
+      },
+      {
+        "url": "https://github.com/PrismLauncher/PrismLauncher/actions?query=branch%3Adevelop+is%3Asuccess",
+        "title": "Prism GH"
       },
       {
         "url": "https://modrinth.com/mods",
@@ -139,37 +148,29 @@
     ]
   },
   {
-    "title": "Destiny 2",
-    "links": [
-      {
-        "url": "https://app.destinyitemmanager.com/",
-        "title": "DIM"
-      },
-      {
-        "url": "https://whereisxur.com/",
-        "title": "Where is Xur"
-      }
-    ]
-  },
-  {
     "title": "Android",
     "links": [
       {
-        "url": "https://github.com/LawnchairLauncher/lawnchair/actions?query=is%3Asuccess",
+        "url": "https://lawnchair.app/",
         "title": "Lawnchair"
       },
       {
-        "url": "https://github.com/LawnchairLauncher/lawnicons/actions?query=is%3Asuccess",
+        "url": "https://lawnchair.app/downloads/",
         "title": "Lawnicons"
       },
       {
-        "url": "https://github.com/revanced/revanced-manager/releases/latest",
+        "url": "https://revanced.app/",
         "title": "ReVanced"
       },
       {
-        "url": "https://www.apkmirror.com/apk/google-inc/youtube/youtube-18.15.40-release/youtube-18.15.40-2-android-apk-download/",
-        "title": "YouTube APK"
-      }
+        "url": "https://luximus-hunter.github.io/latest-yt-rv-apk/",
+        "title": "YouTube APK",
+        "icon": "https://www.youtube.com/"
+      },
+      {
+        "url": "https://vendetta.vercel.app/",
+        "title": "Vendetta"
+      } 
     ]
   },
   {
@@ -177,44 +178,13 @@
     "links": [
       {
         "url": "http://10.10.1.254",
-        "title": "Router"
+        "title": "Router",
+        "icon": "https://www.kpn.nl"
       },
       {
         "url": "https://10.10.1.250",
-        "title": "Access Point"
-      }
-    ]
-  },
-  {
-    "title": "Sieval",
-    "links": [
-      {
-        "url": "https://sieval.atlassian.net/jira/software/projects/SIEV/boards/140",
-        "title": "Jira"
-      },
-      {
-        "url": "https://bitbucket.org/sieval/sievalintern/src/master/",
-        "title": "GitBucket"
-      },
-      {
-        "url": "https://liveadminwindesheim-my.sharepoint.com/:f:/g/personal/s1170953_student_windesheim_nl/Es7j6YAISmFKtHEwmx87nUwBZRzyrZESmiQ6uEgCKrnpBg?e=RZ1tMf",
-        "title": "Drive"
-      },
-      {
-        "url": "https://angular.io/docs",
-        "title": "Angular"
-      },
-      {
-        "url": "https://material.angular.io/components/categories",
-        "title": "Angular Material"
-      },
-      {
-        "url": "https://www.figma.com/file/0YusSJreihJBPjkS2G2M13/Sieval-Intern?node-id=507%3A2125&t=bzWePxwY5RiLSPmU-1",
-        "title": "Figma"
-      },
-      {
-        "url": "https://cloud.myuuiii.com/s/ywCenXZJE8jit3K",
-        "title": "Exports"
+        "title": "Access Point",
+        "icon": "https://www.kpn.nl"
       }
     ]
   }
