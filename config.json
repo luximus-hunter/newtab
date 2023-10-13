@@ -28,6 +28,11 @@
     "title": "Development",
     "links": [
       {
+        "url": "https://www.vercel.com/dashboard",
+        "title": "Vercel",
+        "icon": "https://vercel.com"
+      },
+      {
         "url": "https://www.github.com/",
         "title": "GitHub"
       },
