@@ -7,8 +7,14 @@
         "title": "YouTube"
       },
       {
+        "url": "https://www.aniwave.to/",
+        "title": "AniWave",
+        "color": "#7a51cb"
+      },
+      {
         "url": "https://www.reddit.com",
-        "title": "Reddit"
+        "title": "Reddit",
+        "color": "#ff4500"
       },
       {
         "url": "https://netflix.com/",
@@ -30,15 +36,18 @@
       {
         "url": "https://www.vercel.com/dashboard",
         "title": "Vercel",
-        "icon": "https://vercel.com"
+        "icon": "https://vercel.com",
+        "color": "#000000"
       },
       {
         "url": "https://www.github.com/",
-        "title": "GitHub"
+        "title": "GitHub",
+        "color": "#000000"
       },
       {
         "url": "https://github.com/luximus-hunter?tab=stars",
-        "title": "Stars"
+        "title": "Stars",
+        "color": "#000000"
       }
     ]
   },
@@ -119,7 +128,8 @@
       },
       {
         "url": "https://github.com/PrismLauncher/PrismLauncher/actions?query=branch%3Adevelop+is%3Asuccess",
-        "title": "Prism GH"
+        "title": "Prism GH",
+        "color": "#000000"
       },
       {
         "url": "https://modrinth.com/mods",

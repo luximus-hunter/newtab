@@ -1,177 +1,207 @@
-const urlIcon = (url) => `https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${url}&size=64`
-const googleProxyURL = 'https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&refresh=2592000&url=';
-const searchUrl = 'https://www.bing.com/?q='
+const urlIcon = (url) =>
+  `https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${url}&size=64`;
+const googleProxyURL =
+  "https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&refresh=2592000&url=";
+const searchUrl = "https://www.bing.com/?q=";
 
 const colorThief = new ColorThief();
 
-const searchInput = document.getElementById('search')
-const groupContainer = document.getElementById('groups')
-const resultsContainer = document.getElementById('results')
-resultsContainer.classList.add('links-container')
+const searchInput = document.getElementById("search");
+const groupContainer = document.getElementById("groups");
+const resultsContainer = document.getElementById("results");
+resultsContainer.classList.add("links-container");
 
-let groups = []
-let colors = []
+let groups = [];
+let colors = [];
 
-fetch('./config.json')
+fetch("./config.json")
   .then((response) => response.json())
   .then((data) => {
-    groups = data
-    loaded()
+    groups = data;
+    loaded();
   });
 
 const loaded = () => {
-    searchInput.addEventListener('keyup', searchOnKeyUp)
-    searchInput.addEventListener('keypress', searchOnKeyPress)
-    searchInput.focus()
-    renderGroups(groups)
-}
+  searchInput.addEventListener("keyup", searchOnKeyUp);
+  searchInput.addEventListener("keypress", searchOnKeyPress);
+  searchInput.focus();
+  renderGroups(groups);
+};
 
 const searchOnKeyUp = () => {
-    const query = searchInput.value
-    if (query.length > 0) {
-        clearChildren(groupContainer)
-        resultsContainer.classList.remove('hidden')
-        groupContainer.classList.add('hidden')
-        search(query)
-    } else {
-        clearChildren(resultsContainer)
-        groupContainer.classList.remove('hidden')
-        resultsContainer.classList.add('hidden')
-        renderGroups(groups)
-    }
-}
+  const query = searchInput.value;
+  if (query.length > 0) {
+    clearChildren(groupContainer);
+    resultsContainer.classList.remove("hidden");
+    groupContainer.classList.add("hidden");
+    search(query);
+  } else {
+    clearChildren(resultsContainer);
+    groupContainer.classList.remove("hidden");
+    resultsContainer.classList.add("hidden");
+    renderGroups(groups);
+  }
+};
 
 const searchOnKeyPress = (event) => {
-    if (!event) event = window.event;
+  if (!event) event = window.event;
 
-    const keyCode = event.code || event.key;
-    if (keyCode == 'Enter'){
-        event.preventDefault()
-        if (getLinkCount() < 1) {
-            location.href = searchUrl + searchInput.value
-        } else {  
-            searchInput.value = ''
-            goToFirstLink()
-        }
+  const keyCode = event.code || event.key;
+  if (keyCode == "Enter") {
+    event.preventDefault();
+    if (getLinkCount() < 1) {
+      location.href = searchUrl + searchInput.value;
+    } else {
+      searchInput.value = "";
+      goToFirstLink();
     }
-}
+  }
+};
 
 const search = (query) => {
-    const links = groups.reduce((acc, group) => {
-        const found = group.links.filter(link => link.title.toLowerCase().includes(query.toLowerCase()))
-        return [...acc, ...found]
-    }, [])
-    clearChildren(resultsContainer)
-    renderLinks(links, resultsContainer)
-    getColors()
-}
+  const links = groups.reduce((acc, group) => {
+    const found = group.links.filter((link) =>
+      link.title.toLowerCase().includes(query.toLowerCase())
+    );
+    return [...acc, ...found];
+  }, []);
+  clearChildren(resultsContainer);
+  renderLinks(links, resultsContainer);
+  getColors();
+};
 
 const renderGroups = (groups) => {
-    clearChildren(groupContainer)
+  clearChildren(groupContainer);
 
-    groups.forEach(group => {
-        const title = document.createElement('h1')
-        title.innerText = group.title
+  groups.forEach((group) => {
+    const title = document.createElement("h1");
+    title.innerText = group.title;
 
-        const container = document.createElement('div')
-        container.className = 'links-container'
+    const container = document.createElement("div");
+    container.className = "links-container";
 
-        renderLinks(group.links, container)
+    renderLinks(group.links, container);
 
-        groupContainer.appendChild(title)
-        groupContainer.appendChild(container)
-    })
-    getColors()
-}
+    groupContainer.appendChild(title);
+    groupContainer.appendChild(container);
+  });
+
+  getColors();
+};
 
 const renderLinks = (links, container) => {
-    clearChildren(container)
-    links.forEach(link => {
-        const linkA = document.createElement('a')
-        linkA.className = 'link-card'
-        linkA.href = link.url
+  clearChildren(container);
+  links.forEach((link) => {
+    const linkA = document.createElement("a");
+    linkA.className = "link-card";
+    linkA.href = link.url;
 
-        const linkIcon = document.createElement('img')
-        linkIcon.crossOrigin = 'Anonymous';
-        linkIcon.alt = link.title
-        linkIcon.src = googleProxyURL + encodeURIComponent(urlIcon(link.icon ? link.icon : link.url));
+    const linkIcon = document.createElement("img");
+    linkIcon.crossOrigin = "Anonymous";
+    linkIcon.alt = link.title;
+    linkIcon.src =
+      googleProxyURL +
+      encodeURIComponent(urlIcon(link.icon ? link.icon : link.url));
 
-        linkA.appendChild(linkIcon)
+    linkA.appendChild(linkIcon);
 
-        const linkSpan = document.createElement('span')
-        linkSpan.innerText = link.title
-        linkA.appendChild(linkSpan)
+    const linkSpan = document.createElement("span");
+    linkSpan.innerText = link.title;
+    linkA.appendChild(linkSpan);
 
-        container.appendChild(linkA)
-    })
-}
+    if (link.color) {
+      linkA.style.backgroundColor = link.color.toLowerCase();
+      linkA.style.color = contrastingColor(link.color).toLowerCase();
+    }
+
+    container.appendChild(linkA);
+  });
+};
 
 const goToFirstLink = () => {
-    const firstLink = document.querySelector('a')
-    if (firstLink) {
-        firstLink.click()
-    }
-}
+  const firstLink = document.querySelector("a");
+  if (firstLink) {
+    firstLink.click();
+  }
+};
 
 const getLinkCount = () => {
-    return document.querySelectorAll('a').length
-} 
+  return document.querySelectorAll("a").length;
+};
 
 const clearChildren = (element) => {
   while (element.firstChild) {
     element.removeChild(element.lastChild);
   }
-}
+};
 
 const getColors = () => {
-    document.querySelectorAll('img').forEach(img => {      
-        if (!img) return
+  document.querySelectorAll("img").forEach((img) => {
+    if (!img) return;
 
-        if (colors.map(item => item.url).includes(img.src)) {
-            const color = colors.find(item => item.url === img.src)
-            setColors(img, color.color)
-        } else {
-            if (img.complete) {
-                let color = colorThief.getColor(img);
-                setColors(img, rgbToHex(color[0], color[1], color[2]))
-                colors.push({url: img.src, color: rgbToHex(color[0], color[1], color[2])})
-            } else {
-                img.addEventListener('load', function() {
-                    let color = colorThief.getColor(img);
-                    setColors(img, rgbToHex(color[0], color[1], color[2]))
-                    colors.push({url: img.src, color: rgbToHex(color[0], color[1], color[2])})
-                });
-            }
-        }
-    })
-}
+    if (img.parentNode.style.backgroundColor) return;
+
+    if (colors.map((item) => item.url).includes(img.src)) {
+      const color = colors.find((item) => item.url === img.src);
+      setColors(img, color.color);
+    } else {
+      if (img.complete) {
+        let color = colorThief.getColor(img);
+        setColors(img, rgbToHex(color[0], color[1], color[2]));
+        colors.push({
+          url: img.src,
+          color: rgbToHex(color[0], color[1], color[2]),
+        });
+      } else {
+        img.addEventListener("load", function () {
+          let color = colorThief.getColor(img);
+          setColors(img, rgbToHex(color[0], color[1], color[2]));
+          colors.push({
+            url: img.src,
+            color: rgbToHex(color[0], color[1], color[2]),
+          });
+        });
+      }
+    }
+  });
+};
 
 const setColors = (element, color) => {
-    element.parentNode.style.backgroundColor = color.toLowerCase()
-    element.parentNode.style.color = contrastingColor(color.replace('#', '')).toLowerCase()
-}
+  element.parentNode.style.backgroundColor = color.toLowerCase();
+  element.parentNode.style.color = contrastingColor(color).toLowerCase();
+};
 
-const rgbToHex = (r, g, b) => '#' + [r, g, b].map(x => {
-    const hex = x.toString(16)
-    return hex.length === 1 ? '0' + hex : hex
-}).join('')
+const rgbToHex = (r, g, b) =>
+  "#" +
+  [r, g, b]
+    .map((x) => {
+      const hex = x.toString(16);
+      return hex.length === 1 ? "0" + hex : hex;
+    })
+    .join("");
 
-const contrastingColor =(color) =>{
-    return (luma(color) >= 165) ? '#000000' : '#ffffff';
-}
+const contrastingColor = (color) => {
+  color = color.replace("#", "");
+  return luma(color) >= 165 ? "#000000" : "#ffffff";
+};
 
 const luma = (color) => {
-    var rgb = (typeof color === 'string') ? hexToRGBArray(color) : color;
-    return (0.2126 * rgb[0]) + (0.7152 * rgb[1]) + (0.0722 * rgb[2]); // SMPTE C, Rec. 709 weightings
-}
+  var rgb = typeof color === "string" ? hexToRGBArray(color) : color;
+  return 0.2126 * rgb[0] + 0.7152 * rgb[1] + 0.0722 * rgb[2]; // SMPTE C, Rec. 709 weightings
+};
 
-const hexToRGBArray = (color) =>{
-    if (color.length === 3)
-        color = color.charAt(0) + color.charAt(0) + color.charAt(1) + color.charAt(1) + color.charAt(2) + color.charAt(2);
-    else if (color.length !== 6)
-        throw('Invalid hex color: ' + color);
-    var rgb = [];
-    for (var i = 0; i <= 2; i++)
-        rgb[i] = parseInt(color.substr(i * 2, 2), 16);
-    return rgb;
-}
+const hexToRGBArray = (color) => {
+  color = color.trim();
+  if (color.length === 3)
+    color =
+      color.charAt(0) +
+      color.charAt(0) +
+      color.charAt(1) +
+      color.charAt(1) +
+      color.charAt(2) +
+      color.charAt(2);
+  else if (color.length !== 6) throw "Invalid hex color: " + color;
+  var rgb = [];
+  for (var i = 0; i <= 2; i++) rgb[i] = parseInt(color.substr(i * 2, 2), 16);
+  return rgb;
+};
