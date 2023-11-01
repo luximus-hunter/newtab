@@ -2,7 +2,7 @@ const urlIcon = (url) =>
   `https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${url}&size=64`;
 const googleProxyURL =
   "https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&refresh=2592000&url=";
-const searchUrl = "https://www.bing.com/?q=";
+const searchUrl = "https://www.duckduckgo.com/?q=";
 
 const colorThief = new ColorThief();
 
