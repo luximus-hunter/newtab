@@ -31,6 +31,38 @@
     ]
   },
   {
+    "title": "Communications",
+    "links": [
+      {
+        "url": "https://discord.com/app/",
+        "title": "Discord"
+      },
+      {
+        "url": "https://web.whatsapp.com/",
+        "title": "WhatsApp",
+        "icon": "https://www.whatsapp.com/"
+      },
+      {
+        "title": "Outlook",
+        "url": "https://outlook.live.com/mail/inbox"
+      }
+    ]
+  },
+  {
+    "title": "Storage",
+    "links": [
+      {
+        "url": "https://drive.google.com/drive/u/0/my-drive",
+        "title": "Google Drive",
+        "icon": "https://www.google.com/drive/"
+      },
+      {
+        "url": "https://onedrive.live.com/about/en-us/signin/",
+        "title": "OneDrive"
+      }
+    ]
+  },
+  {
     "title": "Development",
     "links": [
       {
@@ -62,12 +94,17 @@
       {
         "url": "https://leren.windesheim.nl/",
         "title": "ELO",
-        "icon": "https://windesheim.nl"
+        "icon": "https://www.d2l.com/"
+      },
+      {
+        "url": "https://educator.windesheim.nl/",
+        "title": "Educator",
+        "icon": "https://www.educator.eu/"
       },
       {
         "url": "https://windesheim.mycampusprint.nl/",
         "title": "Print",
-        "icon": "https://windesheim.nl"
+        "icon": "https://global.canon/"
       },
       {
         "url": "https://app.tasker.education/",
@@ -93,8 +130,16 @@
         "icon": "https://huysmangroep.nl/"
       },
       {
+        "url": "https://drive.google.com/drive/folders/1JWyeDu0Z3p5GIZWvRj3m0LQjeC_9EF2E/",
+        "title": "BC Drive"
+      },
+      {
         "url": "https://huysmangroeppr.stackstorage.com/s/1d1XWfJAxyy0w7R/",
         "title": "Stack"
+      },
+      {
+        "url": "https://login.scouting.nl/",
+        "title": "SOL"
       }
     ]
   },
@@ -145,20 +190,12 @@
     "title": "BeatSaber",
     "links": [
       {
-        "url": "https://www.scoresaber.com/u/76561198393226059/",
-        "title": "ScoreSaber"
-      },
-      {
         "url": "https://www.beatleader.xyz/u/76561198393226059/",
         "title": "BeatLeader"
       },
       {
         "url": "https://beatsaver.com/",
         "title": "BeatSaver"
-      },
-      {
-        "url": "https://bsaber.com/",
-        "title": "BeastSaber"
       }
     ]
   },
@@ -185,7 +222,7 @@
       {
         "url": "https://vendetta.vercel.app/",
         "title": "Vendetta"
-      } 
+      }
     ]
   },
   {
