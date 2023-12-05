@@ -49,6 +49,26 @@
     ]
   },
   {
+    "title": "Picnic",
+    "links": [
+      {
+        "url": "https://picnic.backoffice.nl/",
+        "title": "BackOffice",
+        "icon": "https://www.payforpeople.nl/"
+      },
+      {
+        "url": "https://picnic.platform.co.nl/",
+        "title": "Academy",
+        "icon": "https://picnic.nl"
+      },
+      {
+        "url": "https://app.slack.com/client/T03VA12SN/D064853QQDT",
+        "title": "Slack",
+        "icon": "https://slack.com"
+      }
+    ]
+  },
+  {
     "title": "Storage",
     "links": [
       {
