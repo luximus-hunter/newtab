@@ -31,6 +31,24 @@
     ]
   },
   {
+    "title": "Planning",
+    "links": [
+      {
+        "url": "https://calendar.google.com/",
+        "title": "Calendar"
+      },
+      {
+        "url": "https://appx.wheniwork.com/myschedule/",
+        "title": "When I Work",
+        "icon": "https://wheniwork.com/"
+      },
+      {
+        "url": "https://www.familywall.com/events.php",
+        "title": "FamilyWall"
+      }
+    ]
+  },
+  {
     "title": "Communications",
     "links": [
       {
