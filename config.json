@@ -44,7 +44,8 @@
       },
       {
         "url": "https://www.familywall.com/events.php",
-        "title": "FamilyWall"
+        "title": "FamilyWall",
+        "color": "#2c95d8"
       }
     ]
   },
@@ -97,6 +98,11 @@
       {
         "url": "https://onedrive.live.com/about/en-us/signin/",
         "title": "OneDrive"
+      },
+      {
+        "url": "https://www.dropbox.com/h",
+        "title": "Dropbox",
+        "color": "#0161fe"
       }
     ]
   },
@@ -118,6 +124,10 @@
         "url": "https://github.com/luximus-hunter?tab=stars",
         "title": "Stars",
         "color": "#000000"
+      },
+      {
+        "url": "https://chat.openai.com/",
+        "title": "ChatGPT"
       }
     ]
   },
@@ -170,6 +180,11 @@
       {
         "url": "https://drive.google.com/drive/folders/1JWyeDu0Z3p5GIZWvRj3m0LQjeC_9EF2E/",
         "title": "BC Drive"
+      },
+      {
+        "url": "https://www.dropbox.com/home/BC",
+        "title": "BC Box",
+        "color": "#0161fe"
       },
       {
         "url": "https://huysmangroeppr.stackstorage.com/s/1d1XWfJAxyy0w7R/",
@@ -266,6 +281,12 @@
   {
     "title": "Home",
     "links": [
+      {
+        "url": "http://homeassistant.luximus.eu:8123/",
+        "title": "HomeAssistant",
+        "icon": "https://www.home-assistant.io/",
+        "color": "#18bcf2"
+      },
       {
         "url": "http://10.10.1.254",
         "title": "Router",
