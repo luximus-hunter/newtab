@@ -1,9 +1,8 @@
+let colors = [];
 
 const setColors = () => {
   document.querySelectorAll("img").forEach((img) => {
-    if (!img) return;
-
-    if (img.parentNode.style.backgroundColor) return;
+    if (!img || img.parentNode.styled == "true") return;
 
     if (colors.map((item) => item.url).includes(img.src)) {
       const color = colors.find((item) => item.url === img.src);
@@ -31,8 +30,7 @@ const setColors = () => {
 };
 
 const setParentColors = (element, color) => {
-  element.parentNode.style.backgroundColor = color.toLowerCase();
-  element.parentNode.style.color = contrastingColor(color).toLowerCase();
+  element.parentNode.style = `--color: ${color.toLowerCase()};`;
 };
 
 const rgbToHex = (r, g, b) =>
@@ -44,12 +42,14 @@ const rgbToHex = (r, g, b) =>
     })
     .join("");
 
+const colorIsDark = (color) => luma(color) < 100;
+
 const contrastingColor = (color) => {
-  color = color.replace("#", "");
-  return luma(color) >= 165 ? "#000000" : "#ffffff";
+  return colorIsDark(color) ? "#ffffff" : "#000000";
 };
 
 const luma = (color) => {
+  color = color.replace("#", "");
   var rgb = typeof color === "string" ? hexToRGBArray(color) : color;
   return 0.2126 * rgb[0] + 0.7152 * rgb[1] + 0.0722 * rgb[2]; // SMPTE C, Rec. 709 weightings
 };

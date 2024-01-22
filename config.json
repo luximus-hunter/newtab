@@ -4,7 +4,8 @@
     "links": [
       {
         "url": "https://www.youtube.com/",
-        "title": "YouTube"
+        "title": "YouTube",
+        "color": "#ff0000"
       },
       {
         "url": "https://aniwave.to/",
@@ -26,7 +27,8 @@
       },
       {
         "url": "https://www.disneyplus.com/",
-        "title": "Disney+"
+        "title": "Disney+",
+        "color": "#0063e5"
       }
     ]
   },
@@ -34,18 +36,14 @@
     "title": "Planning",
     "links": [
       {
-        "url": "https://calendar.google.com/",
-        "title": "Calendar"
+        "url": "https://outlook.live.com/calendar/0/view/week",
+        "title": "Calendar",
+        "color": "#0078d4"
       },
       {
         "url": "https://appx.wheniwork.com/myschedule/",
         "title": "When I Work",
         "icon": "https://wheniwork.com/"
-      },
-      {
-        "url": "https://www.familywall.com/events.php",
-        "title": "FamilyWall",
-        "color": "#2c95d8"
       }
     ]
   },
@@ -54,7 +52,8 @@
     "links": [
       {
         "url": "https://discord.com/app/",
-        "title": "Discord"
+        "title": "Discord",
+        "color": "#5865f2"
       },
       {
         "url": "https://web.whatsapp.com/",
@@ -63,7 +62,8 @@
       },
       {
         "title": "Outlook",
-        "url": "https://outlook.live.com/mail/inbox"
+        "url": "https://outlook.live.com/mail/inbox",
+        "color": "#0078d4"
       }
     ]
   },
@@ -142,7 +142,8 @@
       {
         "url": "https://leren.windesheim.nl/",
         "title": "ELO",
-        "icon": "https://www.d2l.com/"
+        "icon": "https://www.d2l.com/",
+        "color": "#000000"
       },
       {
         "url": "https://educator.windesheim.nl/",
@@ -201,19 +202,23 @@
     "links": [
       {
         "url": "https://steamcommunity.com/profiles/76561198393226059/",
-        "title": "Profile"
+        "title": "Profile",
+        "color": "#000000"
       },
       {
         "url": "https://store.steampowered.com/",
-        "title": "Store"
+        "title": "Store",
+        "color": "#000000"
       },
       {
         "url": "https://steamdb.info/calculator/76561198393226059/",
-        "title": "SteamDB"
+        "title": "SteamDB",
+        "color": "#000000"
       },
       {
         "url": "https://www.steamgriddb.com/",
-        "title": "SteamGridDB"
+        "title": "SteamGridDB",
+        "color": "#000000"
       }
     ]
   },
@@ -257,11 +262,13 @@
     "links": [
       {
         "url": "https://lawnchair.app/",
-        "title": "Lawnchair"
+        "title": "Lawnchair",
+        "color": "#3e99fe"
       },
       {
         "url": "https://lawnchair.app/downloads/",
-        "title": "Lawnicons"
+        "title": "Lawnicons",
+        "color": "#3e99fe"
       },
       {
         "url": "https://revanced.app/",
@@ -270,11 +277,13 @@
       {
         "url": "https://luximus-hunter.github.io/latest-rv-apk/?com.google.android.youtube",
         "title": "YouTube APK",
-        "icon": "https://www.youtube.com/"
+        "icon": "https://www.youtube.com/",
+        "color": "#ff0000"
       },
       {
         "url": "https://vendetta.vercel.app/",
-        "title": "Vendetta"
+        "title": "Vendetta",
+        "color": "#4db7ba"
       }
     ]
   },

@@ -1,3 +1,5 @@
+const allowColors = true;
+
 const urlIcon = (url) =>
   `https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${url}&size=64`;
 const googleProxyURL =
@@ -6,13 +8,15 @@ const searchUrl = "https://www.duckduckgo.com/?q=";
 
 const colorThief = new ColorThief();
 
-const searchInput = document.getElementById("search");
+const searchInput = document.getElementById("search-input");
+const searchButton = document.getElementById("search-button");
 const groupContainer = document.getElementById("groups");
 const resultsContainer = document.getElementById("results");
-resultsContainer.classList.add("links-container");
+resultsContainer.classList.add("links");
+resultsContainer.classList.add("group");
+resultsContainer.classList.add("hidden");
 
 let groups = [];
-let colors = [];
 
 fetch("./config.json")
   .then((response) => response.json())
@@ -49,12 +53,7 @@ const searchOnKeyPress = (event) => {
   const keyCode = event.code || event.key;
   if (keyCode == "Enter") {
     event.preventDefault();
-    if (getLinkCount() < 1) {
-      location.href = searchUrl + searchInput.value;
-    } else {
-      searchInput.value = "";
-      goToFirstLink();
-    }
+    goToSearchResult();
   }
 };
 
@@ -65,35 +64,61 @@ const search = (query) => {
     );
     return [...acc, ...found];
   }, []);
+
+  if (links.length < 1) {
+    const link = {
+      title: query,
+      url: searchUrl + query,
+      icon: "https://duckduckgo.com/favicon.ico",
+    };
+
+    links.push(link);
+  }
+
   clearChildren(resultsContainer);
   renderLinks(links, resultsContainer);
-  setColors();
+
+  const title = document.createElement("h1");
+  title.className = "title";
+  title.innerText = "Results";
+  resultsContainer.prepend(title);
+
+  if (allowColors) {
+    setColors();
+  }
 };
 
 const renderGroups = (groups) => {
   clearChildren(groupContainer);
 
-  groups.forEach((group) => {
+  groups.forEach((g) => {
     const title = document.createElement("h1");
-    title.innerText = group.title;
+    title.className = "title";
+    title.innerText = g.title;
 
     const container = document.createElement("div");
-    container.className = "links-container";
+    container.className = "links";
 
-    renderLinks(group.links, container);
+    renderLinks(g.links, container);
 
-    groupContainer.appendChild(title);
-    groupContainer.appendChild(container);
+    const group = document.createElement("div");
+    group.className = "group";
+    group.appendChild(title);
+    group.appendChild(container);
+
+    groupContainer.appendChild(group);
   });
 
-  setColors();
+  if (allowColors) {
+    setColors();
+  }
 };
 
 const renderLinks = (links, container) => {
   clearChildren(container);
   links.forEach((link) => {
     const linkA = document.createElement("a");
-    linkA.className = "link-card";
+    linkA.className = "link";
     linkA.href = link.url;
 
     const linkIcon = document.createElement("img");
@@ -109,9 +134,9 @@ const renderLinks = (links, container) => {
     linkSpan.innerText = link.title;
     linkA.appendChild(linkSpan);
 
-    if (link.color) {
-      linkA.style.backgroundColor = link.color.toLowerCase();
-      linkA.style.color = contrastingColor(link.color).toLowerCase();
+    if (link.color && allowColors) {        
+      linkA.style = `--color: ${link.color.toLowerCase()};`
+      linkA.styled = "true";
     }
 
     container.appendChild(linkA);
@@ -134,3 +159,14 @@ const clearChildren = (element) => {
     element.removeChild(element.lastChild);
   }
 };
+
+const goToSearchResult = () => {
+  if (getLinkCount() < 1) {
+    location.href = searchUrl + searchInput.value;
+  } else {
+    searchInput.value = "";
+    goToFirstLink();
+  }
+};
+
+searchButton.addEventListener("click", goToSearchResult);
