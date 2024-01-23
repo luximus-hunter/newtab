@@ -78,11 +78,6 @@ const search = (query) => {
   clearChildren(resultsContainer);
   renderLinks(links, resultsContainer);
 
-  const title = document.createElement("h1");
-  title.className = "title";
-  title.innerText = "Results";
-  resultsContainer.prepend(title);
-
   if (allowColors) {
     setColors();
   }
