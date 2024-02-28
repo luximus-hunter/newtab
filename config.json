@@ -10,7 +10,8 @@
       {
         "url": "https://aniwave.to/",
         "title": "AniWave",
-        "color": "#7a51cb"
+        "color": "#7a51cb",
+        "iconType": "ios"
       },
       {
         "url": "https://www.reddit.com",
@@ -23,12 +24,14 @@
       },
       {
         "url": "https://play.hbomax.com/profile/",
-        "title": "HBO MAX"
+        "title": "HBO MAX",
+        "iconType": "ios"
       },
       {
         "url": "https://www.disneyplus.com/",
         "title": "Disney+",
-        "color": "#0063e5"
+        "color": "#0063e5",
+        "iconType": "ios"
       }
     ]
   },
@@ -39,11 +42,6 @@
         "url": "https://outlook.live.com/calendar/0/view/week",
         "title": "Calendar",
         "color": "#0078d4"
-      },
-      {
-        "url": "https://appx.wheniwork.com/myschedule/",
-        "title": "When I Work",
-        "icon": "https://wheniwork.com/"
       }
     ]
   },
@@ -71,6 +69,12 @@
     "title": "Picnic",
     "links": [
       {
+        "url": "https://appx.wheniwork.com/myschedule/",
+        "title": "When I Work",
+        "icon": "https://wheniwork.com/",
+        "iconType": "ios"
+      },
+      {
         "url": "https://picnic.backoffice.nl/",
         "title": "BackOffice",
         "icon": "https://www.payforpeople.nl/"
@@ -78,7 +82,8 @@
       {
         "url": "https://picnic.platform.co.nl/",
         "title": "Academy",
-        "icon": "https://picnic.nl"
+        "icon": "https://picnic.nl",
+        "iconType": "ios"
       },
       {
         "url": "https://teampicnic.slack.com/",
@@ -102,7 +107,8 @@
       {
         "url": "https://www.dropbox.com/h",
         "title": "Dropbox",
-        "color": "#0161fe"
+        "color": "#0161fe",
+        "iconType": "ios"
       }
     ]
   },
@@ -118,16 +124,19 @@
       {
         "url": "https://www.github.com/",
         "title": "GitHub",
-        "color": "#000000"
+        "color": "#000000",
+        "iconType": "round"
       },
       {
         "url": "https://github.com/luximus-hunter?tab=stars",
         "title": "Stars",
-        "color": "#000000"
+        "color": "#000000",
+        "iconType": "round"
       },
       {
         "url": "https://chat.openai.com/",
-        "title": "ChatGPT"
+        "title": "ChatGPT",
+        "iconType": "ios"
       }
     ]
   },
@@ -143,7 +152,8 @@
         "url": "https://leren.windesheim.nl/",
         "title": "ELO",
         "icon": "https://www.d2l.com/",
-        "color": "#000000"
+        "color": "#000000",
+        "iconType": "ios"
       },
       {
         "url": "https://educator.windesheim.nl/",
@@ -153,15 +163,36 @@
       {
         "url": "https://windesheim.mycampusprint.nl/",
         "title": "Print",
-        "icon": "https://global.canon/"
+        "icon": "https://global.canon/",
+        "iconType": "ios"
       },
       {
         "url": "https://app.tasker.education/",
-        "title": "Tasker"
+        "title": "Tasker",
+        "iconType": "ios"
       },
       {
         "url": "https://skylab.windesheim.nl",
         "title": "SkyLab"
+      }
+    ]
+  },
+  {
+    "title": "Route Finders",
+    "links": [
+      {
+        "url": "https://drive.google.com/drive/u/0/folders/1xZv4ocVtafyAAf65wJWusa40PFkY2sGW",
+        "title": "Drive"
+      },
+      {
+        "url": "https://trello.com/b/W25nnZ5J/campus-care-route-finder",
+        "title": "Trello"
+      },
+      {
+        "url": "https://github.com/Path-Finders-038Games/the-campus-case/",
+        "title": "GitHub",
+        "color": "#000000",
+        "iconType": "round"
       }
     ]
   },
@@ -185,7 +216,8 @@
       {
         "url": "https://www.dropbox.com/home/BC",
         "title": "BC Box",
-        "color": "#0161fe"
+        "color": "#0161fe",
+        "iconType": "ios"
       },
       {
         "url": "https://huysmangroeppr.stackstorage.com/s/1d1XWfJAxyy0w7R/",
@@ -213,7 +245,8 @@
       {
         "url": "https://steamdb.info/calculator/76561198393226059/",
         "title": "SteamDB",
-        "color": "#000000"
+        "color": "#000000",
+        "iconType": "ios"
       },
       {
         "url": "https://www.steamgriddb.com/",
@@ -232,7 +265,8 @@
       {
         "url": "https://github.com/PrismLauncher/PrismLauncher/actions?query=branch%3Adevelop+is%3Asuccess",
         "title": "Prism GH",
-        "color": "#000000"
+        "color": "#000000",
+        "iconType": "round"
       },
       {
         "url": "https://modrinth.com/mods",
@@ -263,12 +297,14 @@
       {
         "url": "https://lawnchair.app/",
         "title": "Lawnchair",
-        "color": "#3e99fe"
+        "color": "#3e99fe",
+        "iconType": "round"
       },
       {
         "url": "https://lawnchair.app/downloads/",
         "title": "Lawnicons",
-        "color": "#3e99fe"
+        "color": "#3e99fe",
+        "iconType": "round"
       },
       {
         "url": "https://revanced.app/",
@@ -276,7 +312,8 @@
       },
       {
         "url": "https://calyxos.org/news/",
-        "title": "CalyxOS News"
+        "title": "CalyxOS News",
+        "iconType": "ios"
       }
     ]
   },

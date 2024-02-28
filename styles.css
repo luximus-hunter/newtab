@@ -1,5 +1,5 @@
 :root {
-  --link-font-size: 1.5rem;
+  --link-font-size: 1.75rem;
 	--search-icon-size: 2rem;
 	
 	--search-button-size: calc(var(--search-icon-size) * 2);
@@ -132,6 +132,14 @@ body {
 .link img {
   height: 100%;
   width: 100%;
+}
+
+.link img.round {
+	border-radius: 50%;
+}
+
+.link img.ios {
+	border-radius: 25%;
 }
 
 .hidden {

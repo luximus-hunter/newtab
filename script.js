@@ -122,6 +122,7 @@ const renderLinks = (links, container) => {
     linkIcon.src =
       googleProxyURL +
       encodeURIComponent(urlIcon(link.icon ? link.icon : link.url));
+    link.iconType && linkIcon.classList.add(link.iconType);
 
     linkA.appendChild(linkIcon);
 
