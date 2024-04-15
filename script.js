@@ -1,12 +1,5 @@
-const allowColors = true;
-
-const urlIcon = (url) =>
-  `https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${url}&size=64`;
-const googleProxyURL =
-  "https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&refresh=2592000&url=";
-const searchUrl = "https://www.duckduckgo.com/?q=";
-
-const colorThief = new ColorThief();
+const searchUrl = "https://duckduckgo.com/?q=";
+const searchProvider = "DuckDuckGo";
 
 const searchInput = document.getElementById("search-input");
 const searchButton = document.getElementById("search-button");
@@ -65,22 +58,17 @@ const search = (query) => {
     return [...acc, ...found];
   }, []);
 
-  if (links.length < 1) {
-    const link = {
-      title: query,
-      url: searchUrl + query,
-      icon: "https://duckduckgo.com/favicon.ico",
-    };
+  // if (links.length < 1) {
+  const link = {
+    title: query,
+    url: searchUrl + query,
+  };
 
-    links.push(link);
-  }
+  links.push(link);
+  // }
 
   clearChildren(resultsContainer);
   renderLinks(links, resultsContainer, true);
-
-  if (allowColors) {
-    setColors();
-  }
 };
 
 const renderGroups = (groups) => {
@@ -103,10 +91,6 @@ const renderGroups = (groups) => {
 
     groupContainer.appendChild(group);
   });
-
-  if (allowColors) {
-    setColors();
-  }
 };
 
 const renderLinks = (links, container, renderGroup = false) => {
@@ -120,21 +104,13 @@ const renderLinks = (links, container, renderGroup = false) => {
     linkSpan.innerText = link.title;
     linkA.appendChild(linkSpan);
 
-    // render group name if renderGroup is true
     if (renderGroup) {
       let group = groups.find((g) => g.links.includes(link));
-      
-      if (group) {
-        const groupSpan = document.createElement("span");
-        groupSpan.className = "group-name";
-        groupSpan.innerText = group.title;
-        linkA.appendChild(groupSpan);
-      }
-    }
 
-    if (link.color && allowColors) {        
-      linkA.style = `--color: ${link.color.toLowerCase()};`
-      linkA.styled = "true";
+      const groupSpan = document.createElement("span");
+      groupSpan.className = "group-name";
+      groupSpan.innerText = group ? group.title : `Search ${searchProvider}`;
+      linkA.appendChild(groupSpan);
     }
 
     container.appendChild(linkA);
