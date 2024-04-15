@@ -4,19 +4,15 @@
     "links": [
       {
         "url": "https://www.youtube.com/",
-        "title": "YouTube",
-        "color": "#ff0000"
+        "title": "YouTube"
       },
       {
         "url": "https://aniwave.to/",
-        "title": "AniWave",
-        "color": "#7a51cb",
-        "iconType": "ios"
+        "title": "AniWave"
       },
       {
         "url": "https://www.reddit.com",
-        "title": "Reddit",
-        "color": "#ff4500"
+        "title": "Reddit"
       },
       {
         "url": "https://netflix.com/",
@@ -24,14 +20,11 @@
       },
       {
         "url": "https://play.hbomax.com/profile/",
-        "title": "HBO MAX",
-        "iconType": "ios"
+        "title": "HBO MAX"
       },
       {
         "url": "https://www.disneyplus.com/",
-        "title": "Disney+",
-        "color": "#0063e5",
-        "iconType": "ios"
+        "title": "Disney+"
       }
     ]
   },
@@ -40,8 +33,7 @@
     "links": [
       {
         "url": "https://outlook.live.com/calendar/0/view/week",
-        "title": "Calendar",
-        "color": "#0078d4"
+        "title": "Calendar"
       }
     ]
   },
@@ -50,18 +42,15 @@
     "links": [
       {
         "url": "https://discord.com/app/",
-        "title": "Discord",
-        "color": "#5865f2"
+        "title": "Discord"
       },
       {
         "url": "https://web.whatsapp.com/",
-        "title": "WhatsApp",
-        "icon": "https://www.whatsapp.com/"
+        "title": "WhatsApp"
       },
       {
         "title": "Outlook",
-        "url": "https://outlook.live.com/mail/inbox",
-        "color": "#0078d4"
+        "url": "https://outlook.live.com/mail/inbox"
       }
     ]
   },
@@ -69,26 +58,24 @@
     "title": "Picnic",
     "links": [
       {
-        "url": "https://appx.wheniwork.com/myschedule/",
-        "title": "When I Work",
-        "icon": "https://wheniwork.com/",
-        "iconType": "ios"
+        "url": "https://teampicnic.slack.com/",
+        "title": "Slack"
       },
       {
         "url": "https://picnic.backoffice.nl/",
-        "title": "BackOffice",
-        "icon": "https://www.payforpeople.nl/"
+        "title": "PayForPeople"
       },
+      {
+        "url": "https://nl.picnichubs.app/",
+        "title": "Runner Wiki"
+      },  
       {
         "url": "https://picnic.platform.co.nl/",
-        "title": "Academy",
-        "icon": "https://picnic.nl",
-        "iconType": "ios"
+        "title": "Picnic Academy"
       },
       {
-        "url": "https://teampicnic.slack.com/",
-        "title": "Slack",
-        "icon": "https://teampicnic.slack.com/"
+        "url": "https://appx.wheniwork.com/myschedule/",
+        "title": "When I Work"
       }
     ]
   },
@@ -97,8 +84,7 @@
     "links": [
       {
         "url": "https://drive.google.com/drive/u/0/my-drive",
-        "title": "Google Drive",
-        "icon": "https://www.google.com/drive/"
+        "title": "Google Drive"
       },
       {
         "url": "https://onedrive.live.com/about/en-us/signin/",
@@ -106,9 +92,7 @@
       },
       {
         "url": "https://www.dropbox.com/h",
-        "title": "Dropbox",
-        "color": "#0161fe",
-        "iconType": "ios"
+        "title": "Dropbox"
       }
     ]
   },
@@ -117,26 +101,19 @@
     "links": [
       {
         "url": "https://www.vercel.com/dashboard",
-        "title": "Vercel",
-        "icon": "https://vercel.com",
-        "color": "#000000"
+        "title": "Vercel Dashboard"
       },
       {
         "url": "https://www.github.com/",
-        "title": "GitHub",
-        "color": "#000000",
-        "iconType": "round"
+        "title": "GitHub"
       },
       {
         "url": "https://github.com/luximus-hunter?tab=stars",
-        "title": "Stars",
-        "color": "#000000",
-        "iconType": "round"
+        "title": "GitHub Stars"
       },
       {
         "url": "https://chat.openai.com/",
-        "title": "ChatGPT",
-        "iconType": "ios"
+        "title": "ChatGPT"
       }
     ]
   },
@@ -145,31 +122,19 @@
     "links": [
       {
         "url": "https://wip.windesheim.nl/",
-        "title": "WIP",
-        "icon": "https://windesheim.nl"
+        "title": "WIP"
       },
       {
         "url": "https://leren.windesheim.nl/",
-        "title": "ELO",
-        "icon": "https://www.d2l.com/",
-        "color": "#000000",
-        "iconType": "ios"
+        "title": "ELO"
       },
       {
         "url": "https://educator.windesheim.nl/",
-        "title": "Educator",
-        "icon": "https://www.educator.eu/"
+        "title": "Educator"
       },
       {
         "url": "https://windesheim.mycampusprint.nl/",
-        "title": "Print",
-        "icon": "https://global.canon/",
-        "iconType": "ios"
-      },
-      {
-        "url": "https://app.tasker.education/",
-        "title": "Tasker",
-        "iconType": "ios"
+        "title": "Campus Print"
       },
       {
         "url": "https://skylab.windesheim.nl",
@@ -190,9 +155,7 @@
       },
       {
         "url": "https://github.com/Path-Finders-038Games/the-campus-case/",
-        "title": "GitHub",
-        "color": "#000000",
-        "iconType": "round"
+        "title": "GitHub"
       }
     ]
   },
@@ -201,23 +164,19 @@
     "links": [
       {
         "url": "https://barbord-permalink.vercel.app/",
-        "title": "Barbord HIII",
-        "icon": "https://huysmangroep.nl/"
+        "title": "Barbord HIII"
       },
       {
         "url": "https://barbord-sherros.vercel.app/",
-        "title": "Barbord Sherro's",
-        "icon": "https://huysmangroep.nl/"
+        "title": "Barbord Sherro's"
       },
       {
         "url": "https://drive.google.com/drive/folders/1JWyeDu0Z3p5GIZWvRj3m0LQjeC_9EF2E/",
-        "title": "BC Drive"
+        "title": "BC Google Drive"
       },
       {
         "url": "https://www.dropbox.com/home/BC",
-        "title": "BC Box",
-        "color": "#0161fe",
-        "iconType": "ios"
+        "title": "BC DropBox"
       },
       {
         "url": "https://huysmangroeppr.stackstorage.com/s/1d1XWfJAxyy0w7R/",
@@ -234,24 +193,19 @@
     "links": [
       {
         "url": "https://steamcommunity.com/profiles/76561198393226059/",
-        "title": "Profile",
-        "color": "#000000"
+        "title": "Steam Profile"
       },
       {
         "url": "https://store.steampowered.com/",
-        "title": "Store",
-        "color": "#000000"
+        "title": "Steam Store"
       },
       {
         "url": "https://steamdb.info/calculator/76561198393226059/",
-        "title": "SteamDB",
-        "color": "#000000",
-        "iconType": "ios"
+        "title": "SteamDB"
       },
       {
         "url": "https://www.steamgriddb.com/",
-        "title": "SteamGridDB",
-        "color": "#000000"
+        "title": "SteamGridDB"
       }
     ]
   },
@@ -260,13 +214,11 @@
     "links": [
       {
         "url": "https://prismlauncher.org/",
-        "title": "Prism"
+        "title": "Prism Launcher"
       },
       {
         "url": "https://github.com/PrismLauncher/PrismLauncher/actions?query=branch%3Adevelop+is%3Asuccess",
-        "title": "Prism GH",
-        "color": "#000000",
-        "iconType": "round"
+        "title": "Prism GitHub"
       },
       {
         "url": "https://modrinth.com/mods",
@@ -296,15 +248,11 @@
     "links": [
       {
         "url": "https://lawnchair.app/",
-        "title": "Lawnchair",
-        "color": "#3e99fe",
-        "iconType": "round"
+        "title": "Lawnchair"
       },
       {
         "url": "https://lawnchair.app/downloads/",
-        "title": "Lawnicons",
-        "color": "#3e99fe",
-        "iconType": "round"
+        "title": "Lawnicons"
       },
       {
         "url": "https://revanced.app/",
@@ -312,8 +260,7 @@
       },
       {
         "url": "https://calyxos.org/news/",
-        "title": "CalyxOS News",
-        "iconType": "ios"
+        "title": "CalyxOS News"
       }
     ]
   },
@@ -322,19 +269,15 @@
     "links": [
       {
         "url": "http://homeassistant.luximus.eu:8123/",
-        "title": "HomeAssistant",
-        "icon": "https://www.home-assistant.io/",
-        "color": "#18bcf2"
+        "title": "HomeAssistant"
       },
       {
         "url": "http://10.10.1.254",
-        "title": "Router",
-        "icon": "https://www.kpn.nl"
+        "title": "Router"
       },
       {
         "url": "https://10.10.1.250",
-        "title": "Access Point",
-        "icon": "https://www.kpn.nl"
+        "title": "Access Point"
       }
     ]
   }

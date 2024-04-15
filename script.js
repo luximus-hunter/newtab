@@ -76,7 +76,7 @@ const search = (query) => {
   }
 
   clearChildren(resultsContainer);
-  renderLinks(links, resultsContainer);
+  renderLinks(links, resultsContainer, true);
 
   if (allowColors) {
     setColors();
@@ -109,26 +109,28 @@ const renderGroups = (groups) => {
   }
 };
 
-const renderLinks = (links, container) => {
+const renderLinks = (links, container, renderGroup = false) => {
   clearChildren(container);
   links.forEach((link) => {
     const linkA = document.createElement("a");
     linkA.className = "link";
     linkA.href = link.url;
 
-    const linkIcon = document.createElement("img");
-    linkIcon.crossOrigin = "Anonymous";
-    linkIcon.alt = link.title;
-    linkIcon.src =
-      googleProxyURL +
-      encodeURIComponent(urlIcon(link.icon ? link.icon : link.url));
-    link.iconType && linkIcon.classList.add(link.iconType);
-
-    linkA.appendChild(linkIcon);
-
     const linkSpan = document.createElement("span");
     linkSpan.innerText = link.title;
     linkA.appendChild(linkSpan);
+
+    // render group name if renderGroup is true
+    if (renderGroup) {
+      let group = groups.find((g) => g.links.includes(link));
+      
+      if (group) {
+        const groupSpan = document.createElement("span");
+        groupSpan.className = "group-name";
+        groupSpan.innerText = group.title;
+        linkA.appendChild(groupSpan);
+      }
+    }
 
     if (link.color && allowColors) {        
       linkA.style = `--color: ${link.color.toLowerCase()};`
