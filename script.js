@@ -12,12 +12,30 @@ resultsContainer.classList.add("hidden");
 let groups = [];
 let focusedLink = 0;
 
-fetch("./config.json")
+const load = async () => {
+  // pick 2 random hex codes
+  let randomColor1 = Math.floor(Math.random() * 16777215).toString(16);
+  let randomColor2 = Math.floor(Math.random() * 16777215).toString(16);
+
+  while (randomColor1.length < 6) {
+    randomColor1 += "0";
+  }
+
+  while (randomColor2.length < 6) {
+    randomColor2 += "0";
+  }
+
+  // add --color1 and --color2 to the root element
+  document.documentElement.style.setProperty("--color1", `#${randomColor1}`);
+  document.documentElement.style.setProperty("--color2", `#${randomColor2}`);
+
+  fetch("./config.json")
   .then((response) => response.json())
   .then((data) => {
     groups = data;
     loaded();
   });
+}
 
 const loaded = () => {
   window.removeEventListener("keydown", onWindowKeyDown);
@@ -199,3 +217,5 @@ const goToSearchResult = () => {
     goToFirstLink();
   }
 };
+
+load();

@@ -145,8 +145,8 @@ body {
 .link.focused span:first-child,
 #title,
 .title {
-  background: #a91861;
-  background: linear-gradient(90deg, #a91861, #a22db4);
+  background: var(--color2);
+  background: linear-gradient(135deg, var(--color1), var(--color2));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
