@@ -10,6 +10,7 @@ resultsContainer.classList.add("group");
 resultsContainer.classList.add("hidden");
 
 let groups = [];
+let focusedLink = 0;
 
 fetch("./config.json")
   .then((response) => response.json())
@@ -19,19 +20,67 @@ fetch("./config.json")
   });
 
 const loaded = () => {
+  window.removeEventListener("keydown", onWindowKeyDown);
+  window.addEventListener("keydown", onWindowKeyDown);
+  searchButton.addEventListener("click", goToSearchResult);
   searchInput.addEventListener("keyup", searchOnKeyUp);
   searchInput.addEventListener("keypress", searchOnKeyPress);
   searchInput.focus();
+
   renderGroups(groups);
 };
 
-const searchOnKeyUp = () => {
+const focusLink = (index) => {
+  const links = document.querySelectorAll("a");
+  links.forEach((link, i) => {
+    if (i === index) {
+      link.classList.add("focused");
+      //link.focus();
+    } else {
+      link.classList.remove("focused");
+    }
+  });
+};
+
+const onWindowKeyDown = (event) => {
+  if (
+    !(document.activeElement === searchInput && searchInput.value.length > 0)
+  ) {
+    return;
+  }
+
+  if (event.key === "ArrowDown") {
+    focusedLink++;
+    if (focusedLink >= getLinkCount()) {
+      focusedLink = 0;
+    }
+    focusLink(focusedLink);
+  } else if (event.key === "ArrowUp") {
+    focusedLink--;
+    if (focusedLink < 0) {
+      focusedLink = getLinkCount() - 1;
+    }
+    focusLink(focusedLink);
+  } else if (event.key === "Enter") {
+    // This is handled at the input level. Do nothing.
+  } else {
+    searchInput.focus();
+    searchInput.dispatchEvent(event);
+  }
+};
+
+const searchOnKeyUp = (event) => {
+  if (event.key === "ArrowDown" || event.key === "ArrowUp") {
+    return;
+  }
+
   const query = searchInput.value;
   if (query.length > 0) {
     clearChildren(groupContainer);
     resultsContainer.classList.remove("hidden");
     groupContainer.classList.add("hidden");
     search(query);
+    focusLink(0);
   } else {
     clearChildren(resultsContainer);
     groupContainer.classList.remove("hidden");
@@ -135,12 +184,18 @@ const clearChildren = (element) => {
 };
 
 const goToSearchResult = () => {
+  if (searchInput.value.length < 1) {
+    return;
+  }
+
   if (getLinkCount() < 1) {
     location.href = searchUrl + searchInput.value;
+  } else if (focusedLink >= 0) {
+    const links = document.querySelectorAll("a");
+    searchInput.value = "";
+    links[focusedLink].click();
   } else {
     searchInput.value = "";
     goToFirstLink();
   }
 };
-
-searchButton.addEventListener("click", goToSearchResult);
