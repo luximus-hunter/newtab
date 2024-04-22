@@ -147,7 +147,7 @@
     "links": [
       {
         "url": "https://drive.google.com/drive/u/0/folders/1xZv4ocVtafyAAf65wJWusa40PFkY2sGW",
-        "title": "Drive"
+        "title": "Google Drive"
       },
       {
         "url": "https://trello.com/b/W25nnZ5J/campus-care-route-finder",
@@ -156,6 +156,19 @@
       {
         "url": "https://github.com/Path-Finders-038Games/the-campus-case/",
         "title": "GitHub"
+      }
+    ]
+  },
+  {
+    "title": "R&D Health Game",
+    "links": [
+      {
+        "url": "https://liveadminwindesheim-my.sharepoint.com/:f:/g/personal/s1156016_student_windesheim_nl/EjJOmrce4shNqRrxBAy4qwQBSqylgipxPlH3NIMYKQ9WQw ",
+        "title": "OneDrive"
+      },
+      {
+        "url": "https://trello.com/b/cf1PrsBO/rd",
+        "title": "Trello"
       }
     ]
   },
