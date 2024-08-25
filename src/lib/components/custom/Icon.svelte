@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { faviconUrl } from '$lib/data';
+	import getFaviconLinkFromUrl from '$lib/images';
 	export let url: string;
 </script>
 
-<img src={faviconUrl(url)} class="h-4 w-4 scale-150" alt={`favicon for ${url}`} />
+<img src={getFaviconLinkFromUrl(url)} class="h-4 w-4" alt={`favicon for ${url}`} />
